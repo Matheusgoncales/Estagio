@@ -1,0 +1,101 @@
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.espaco {
+    padding: 23px;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%)
+}
+
+.imget {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.blocoprin {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.textet {
+    position: relative;
+    color: hsl(178, 100%, 50%);
+    margin-left: 5px;
+}
+
+.textclock {
+    position: relative;
+    margin-left: 5px;
+}
+
+.nome {
+    color: white;
+    margin-left: 5px;
+}
+
+.imgavatar {
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    background-color: white;
+    margin-left: -32px;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    ;
+}
+
+.eterium {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    margin-left: 70px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.parentcointime {
+    display: flex;
+}
+
+.namecreator {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    margin-left: 5px;
+}
+
+.textinfo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
