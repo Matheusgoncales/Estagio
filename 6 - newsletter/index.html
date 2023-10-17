@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 6 newsletter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bigparent">
+        <div class="blocright">
+            <div class="title">
+                <h1>Stay Update!</h1>
+            </div>
+            <p>Join 60.000+ product managers receiving monthly updates on:</p>
+            <ul class="">
+                <div class="liimg">
+                    <img class="imglist" src="assets/images/icon-list.svg">
+                    <li class="litext">Product discovery and building what matters</li>
+                </div>
+                <div class="liimg">
+                    <img class="imglist" src="assets/images/icon-list.svg">
+
+                    <li class="litext">Measuring to ensure updates are a success</li>
+                </div>
+                <div class="liimg">
+                    <img class="imglist" src="assets/images/icon-list.svg">
+                    <li class="litext">And much more!</li>
+                </div>
+            </ul>
+            <form class="emailinfo">
+                <div class="pemailbox">
+                    <p class="pemail">Email address</p>
+                    <p class="pemailinvalid">Valid email required </p>
+                </div>
+                <input id="emailbox" onfocus="clearbtn()" type="text" name="email" placeholder="email@company.com">
+                <button class="btn" type="button" onclick="btnconfirmed()">Subscribe to monthly newsletter</button>
+            </form>
+        </div>
+        <div class="imgleft">
+            <img class="imgsup" src="assets/images/illustration-sign-up-desktop.svg">
+
+            <div class="imgmobile"><img src="assets/images/illustration-sign-up-mobile.svg"></div>
+        </div>
+    </div>
+    <div class="success">
+        <div class="successtext">
+            <img class="imgsuc" src="assets/images/icon-success.svg">
+            <div class="ptitle">Thanks for subscribing!</div>
+            <p class="psuccess">A confirmation email has been sent to <span class="bolder">ash@loremcompany.com</span>.
+                Please open it and click the button inside to
+                confirm your subscription</p>
+            <div class="btnscposition">
+                <button class="btnsc" type="button" onclick="dismissbtn()">Dismiss message </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
