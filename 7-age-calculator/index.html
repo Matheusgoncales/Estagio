@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+
+  <title>EX 7 Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bigparent">
+    <div class="parent">
+      <div class="dates">
+        <form class="formtop" action="script.js">
+          <div class="daytop">
+            <p class="ptop">DAY</p>
+            <input class="errori" type="number" id="dateday" placeholder="DD">
+            <p class="errorp">This fild is required</p>
+          </div>
+          <div class="monthtop">
+            <p class="ptop">MONTH</p>
+            <input class="errori" type="number" id="datemonth" placeholder="MM">
+            <p class="errorp">This fild is required</p>
+          </div>
+          <div class="yearstop">
+            <p class="ptop">YEARS</p>
+            <input class="errori" type="number" id="dateyear" placeholder="YYYY">
+            <p class="errorp">This fild is required</p>
+          </div>
+        </form>
+      </div>
+      <div class="lineimg">
+        <div class="hrdiv">
+          <hr>
+        </div>
+        <button class="btn" type="submit" onclick="validdates()"><img src="assets/images/icon-arrow.svg"></button>
+      </div>
+      <div class="results">
+        <form action="resultsage">
+          <div class="years">
+            <div class="ifenp">
+              <p id="resultyears">--</p>
+            </div>
+            <p class="textp">years</p>
+          </div>
+          <div class="month">
+            <div class="ifenp">
+              <p id="resultmonth">--</p>
+            </div>
+            <p class="textp">month</p>
+          </div>
+          <div class="days">
+            <div class="ifenp">
+              <p id="resultday">--</p>
+            </div>
+            <p class="textp">days</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
