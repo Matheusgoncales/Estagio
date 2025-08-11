@@ -1,4 +1,3 @@
-
 function validdates() {
     var day = document.querySelector("#dateday").value
     var month = document.querySelector("#datemonth").value
@@ -9,7 +8,7 @@ function validdates() {
     let monthnd= nd.getMonth() + 1;
     let fyearnd = nd.getFullYear();
 
-    const now = new Date("07-27-2023");
+    const now = new Date();
     let daynow = now.getDate();
     let monthnow = now.getMonth() + 1;
     let fyear = now.getFullYear();
@@ -57,34 +56,28 @@ function validdates() {
 
     function dates() {
 
-        if (day > daynow) {
-            res = day - daynow
-            document.querySelector("#resultday").innerHTML = 365 - res;
+        const today = new Date(fyear, monthnow - 1, daynow);
+        const birthDate = new Date(year, month - 1, day);
+
+        let years = today.getFullYear() - birthDate.getFullYear();
+        let months = today.getMonth() - birthDate.getMonth();
+        let days = today.getDate() - birthDate.getDate();
+
+        if (days < 0) {
+            const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+            days += prevMonth;
+            months--;
         }
-        else {
-            res = daynow - day
-            document.querySelector("#resultday").innerHTML = res;
+        if (months < 0) {
+            months += 12;
+            years--;
         }
 
-        if (month > monthnow || month == monthnow && day > daynow) {
-            resm = month - monthnow
-            document.querySelector("#resultmonth").innerHTML = 12 - resm;
-        }
-        else {
-            resm = monthnow - month
-            document.querySelector("#resultmonth").innerHTML = resm;
-        }
+        document.querySelector("#resultyears").innerHTML = years;
+        document.querySelector("#resultmonth").innerHTML = months;
+        document.querySelector("#resultday").innerHTML = days;
 
-        if (fyear > year && month > monthnow || month == monthnow && day > daynow) {
-            resy = (fyear - year) - 1
-            document.querySelector("#resultyears").innerHTML = resy;
-        }
-        else {
-            resy = fyear - year
-            document.querySelector("#resultyears").innerHTML = resy;
-        }
 
     }
 
 }
-
